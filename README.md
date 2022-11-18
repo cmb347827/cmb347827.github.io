@@ -58,7 +58,15 @@ I remember now that a 'mobile-first' approach is the better way to develop, and 
 - [How to make only the parent element opaque](https://stackoverflow.com/questions/10879045/how-to-set-opacity-in-parent-div-and-not-affect-in-child-div) - This was new to me. I first tried applying opacity to the parent , but then the child element inherited it. By using hsla() color instead on the parent the child did not inherit the transparancy
 - [A more responsive approach to using height in CSS] (https://stackoverflow.com/questions/9537838/div-height-100-and-expands-to-fit-content) -Using :
       
-           ```#qr-code-container {display: block ; overflow: auto;} html,body{ height: 100%} ```
+           ```
+              #qr-code-container {
+                 display: block ; 
+                 overflow: auto;
+               } 
+                 html,body{ 
+                 height: 100%
+               }
+            ```
 
 ## Author
 
