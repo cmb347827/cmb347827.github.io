@@ -1,0 +1,208 @@
+:root{
+	--Sheer-Pink: hsla(291, 9%, 92%,0.9);
+	--White: hsl(0,0%,100%);
+	--Light-gray: hsl(212, 45%, 89%);
+	--Grayish-blue: hsl(220, 15%, 55%);
+	--Dark-blue: hsl(218, 44%, 22%);
+	
+}
+
+html{
+	font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+	width: 100vw;
+	height: 100%;
+	background: url(https://i.postimg.cc/TPwywSjD/doodles-gaf6810aae-1280.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+body,#qr-code-container,#blue-background{
+	height: 100%;
+}
+.flex{
+	display:flex;
+}
+.flex-row{
+	flex-flow: row wrap;
+}
+#qr-code-container{
+	position:fixed;
+	display:block;
+	left:0;
+	top:0;
+	width: 100vw;
+	overflow: auto;
+	background-color: var(--Sheer-Pink);
+}
+
+/*default max 600 pix in portrait mode */
+#blue-background{
+	margin: auto;
+	background-color: var(--Light-gray);
+	width: 375px;
+	overflow: auto;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+#qr-code{
+	max-width: calc(375px - 5%);
+	height: fit-content;
+	background-color: var(--White);
+	z-index: 99;
+	margin: 5% auto;
+	overflow: auto;
+	border-radius: 12px;
+}
+#qr-code img{
+	display: block;
+	margin: 5% auto;
+	border-radius: 25px;
+}
+#qr-code div{
+	justify-content: center;
+}
+#qr-code img{
+	object-fit: contain;
+}
+#qr-code-container p{
+	font-size: 15px;
+	max-width: 300px;
+	text-align:center;
+}
+
+
+
+@media only screen and (max-width: 600px) and (orientation: landscape){
+	#blue-background{
+		width: calc(100vw - 20%);
+	}
+	#qr-code{
+	   max-width: 375px;
+    }
+	#qr-code-container p{
+	   max-width: calc(375px - 10%);
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) and (orientation: portrait){
+	#blue-background{
+	   width: calc(375px + 1%);
+    }
+    #qr-code{
+	   max-width: calc(375px - 4%);
+    }
+    #qr-code-container p{
+	   max-width: calc(375px + 1%);
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) and (orientation: landscape){
+	#blue-background{
+	   width: calc(100vw - 19%);
+    }
+    #qr-code{
+	   max-width: calc(375px + 1%);
+    }
+    #qr-code-container p{
+	   max-width: calc(375px - 9%);
+    }
+}
+
+
+@media only screen and (min-width: 769px) and (max-width: 992px) and (orientation: portrait){
+	#blue-background{
+	   width: calc(375px + 2%);
+    }
+    #qr-code{
+	   max-width: calc(375px - 5%);
+    }
+    #qr-code-container p{
+	   max-width: calc(375px + 2%);
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) and (orientation: landscape){
+	#blue-background{
+	   width: calc(100vw - 18%);
+    }
+    #qr-code{
+	   max-width: calc(375px + 2%);
+    }
+    #qr-code-container p{
+	   max-width: calc(375px - 8%);
+    }
+}
+
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) and (orientation: portrait){
+	#blue-background{
+	   width: calc(375px + 3%);
+    }
+    #qr-code{
+	   max-width: calc(375px - 6%);
+    }
+    #qr-code-container p{
+	   max-width: calc(375px + 3%);
+    }
+}
+@media only screen and (min-width: 993px) and (max-width: 1200px) and (orientation: landscape){
+	#blue-background{
+	   width: calc(100vw - 17%);
+    }
+    #qr-code{
+	   max-width: calc(375px + 3%);
+    }
+    #qr-code-container p{
+	   max-width: calc(375px - 7%);
+    }
+}
+
+
+/*based on large desktop design*/
+@media only screen and (min-width: 1201px) and (max-width: 1439px) and (orientation: portrait){
+	#blue-background{
+	   width: calc(375px + 4%);
+    }
+    #qr-code{
+	   max-width: calc(375px - 7%);
+    }
+    #qr-code-container p{
+	   max-width: calc(375px + 4%);
+    }
+}
+@media only screen and (min-width: 1201px) and (max-width: 1439px) and (orientation: landscape){
+	#blue-background{
+	   width: calc(100vw - 16%);
+    }
+    #qr-code{
+	   max-width: calc(375px + 4%);
+    }
+    #qr-code-container p{
+	   max-width: calc(375px - 6%);
+    }
+}
+
+@media only screen and (min-width: 1440px) and (orientation: portrait){
+	#blue-background{
+	   width: 1440px;
+    }
+    #qr-code{
+	   max-width: calc(375px - 8%);
+    }
+    #qr-code-container p{
+	   max-width: calc(375px + 5%);
+    }
+}
+@media only screen and (min-width: 1440px) and (orientation: landscape){
+	#blue-background{
+	   width: calc(100vw - 15%);
+    }
+    #qr-code{
+	   max-width: calc(375px + 5%);
+    }
+    #qr-code-container p{
+	   max-width: calc(375px - 5%);
+    }
+}
+    
