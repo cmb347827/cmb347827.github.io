@@ -56,7 +56,9 @@ I remember now that a 'mobile-first' approach is the better way to develop, and 
 - [CSS tricks full screen background](https://css-tricks.com/perfect-full-page-background-image/) - I have used this code before in applying full coverage background.
 - [make-an-empty-div-height-and-width-of-its-container](https://stackoverflow.com/questions/11301151/make-an-empty-div-height-and-width-of-its-container) - This helped me to understand how to cover the foreground container color.
 - [How to make only the parent element opaque](https://stackoverflow.com/questions/10879045/how-to-set-opacity-in-parent-div-and-not-affect-in-child-div) - This was new to me. I first tried applying opacity to the parent , but then the child element inherited it. By using hsla() color instead on the parent the child did not inherit the transparancy
-- [A more responsive approach to using height in CSS] (https://stackoverflow.com/questions/9537838/div-height-100-and-expands-to-fit-content) - Using `#qr-code-container {display: block ; overflow: auto;} html,body{ height: 100%}`
+- [A more responsive approach to using height in CSS] (https://stackoverflow.com/questions/9537838/div-height-100-and-expands-to-fit-content) - Using 
+
+         `#qr-code-container {display: block ; overflow: auto;} html,body{ height: 100%}`
 
 ## Author
 
